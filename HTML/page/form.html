@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Register</h1>
+
+    <form action="create.php" method="get" enctype="multipart/form-data">
+
+        <label for="">Profile</label>
+        <input type="" name=""
+        <label for="name">Name</label>
+        <input type="text" name="Student_name" id="name" placeholder="Mg Mg" value="Lae Lae Win" readonly><br><br>
+        <label for="email">Email</label>
+        <input type="email" name="stuemail" id="email" required><br><br>
+        <label for="phone">Phone</label>
+        <input type="number" name="phone" id="phone"><br><br>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="18" max="30" step="2"><br><br>
+        <label for="" >Gender</label>
+        <br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
+        <label for="">Graduation</label><br>
+        <input type="checkbox" id="hightschool" name="hightschool" value="1">
+        <label for="hightschool">Hightschool (10th)</label><br>
+        <input type="checkbox" id="hightschool" name="hightschool"value=2>
+        <label for="hightschool">Hightschool (12th)</label><br>
+        <input type="checkbox" id="graduat" name="graduat" value="3">
+        <label for="hightschool">Graduated</label><br>
+        <input type="checkbox" id="master" name="master" value="4">
+        <label for="hightschool">Master</label><br><br>
+
+        <label for="date">Date</label>
+        <input type="date" id="date"><br><br>
+
+        <label for="">Time</label>
+        <input type="time"><br><br>
+
+        <label for="color">Color</label>
+        <input type="color" value="#ffff00"><br><br>
+
+        <label for="">Academic</label><br>
+        <select name="">
+            <option value="0">Choose One Option</option>
+            <option value="1">2005</option>
+            <option value="2">2006</option>
+            <option value="3">2007</option>
+            <option value="4">2008</option>
+        </select><br><br>
+
+        <label for="">Address</label>
+        <textarea name=""></textarea><br>
+
+        <br>
+        <button type="submit">Save</button>
+        <input type="button" value="Submit">
+    </form>
+</body>
+</html>

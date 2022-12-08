@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form Action</title>
 </head>
 <body>
     <h1>Student Register</h1>
 
     <form action="create.php" method="get" enctype="multipart/form-data">
 
-        <label for="">Profile</label>
-        <input type="" name=""
+        <label for="profile">Profile</label>
+        <input type="file" id="profile"><br><br>
         <label for="name">Name</label>
         <input type="text" name="Student_name" id="name" placeholder="Mg Mg" value="Lae Lae Win" readonly><br><br>
         <label for="email">Email</label>
@@ -50,18 +50,18 @@
         <input type="color" value="#ffff00"><br><br>
 
         <label for="">Academic</label><br>
-        <select name="">
+        <select name="" multiple>
             <option value="0">Choose One Option</option>
-            <option value="1">2005</option>
-            <option value="2">2006</option>
-            <option value="3">2007</option>
-            <option value="4">2008</option>
-        </select><br><br>
+            <option value="1">2015</option>
+            <option value="2">2016</option>
+            <option value="3">2017</option>
+            <option value="4">2018</option>
+        </select>
+        <br><br>
 
         <label for="">Address</label>
-        <textarea name=""></textarea><br>
+        <textarea name=""></textarea><br><br>
 
-        <br>
         <button type="submit">Save</button>
         <input type="button" value="Submit">
     </form>

@@ -1,0 +1,230 @@
+/* tag/element selector */
+h1{
+    /* color: red; text */
+    /* rgb -> 0->9->a->f */
+    color: #8b1212;
+    text-align: center;
+    font-size: 40px;
+}
+
+/* universal selector */
+*{
+    /* color: green; */
+    margin: 0px;
+    padding: 0px;
+
+} 
+
+/* attribute selector */
+a[
+    title="google"]{
+        color: red;
+    }
+
+/* attribute */
+#idselector{
+    word-spacing: 3opx;
+    letter-spacing: 10px;
+    line-height: 50px;
+    margin: auto;
+}
+.classselector{
+    color: red;
+    text-transform: uppercase;
+    text-indent: 50px;
+    letter-spacing: 10px;
+    line-height: 30px;
+
+
+}
+
+/* descendent selector */
+.desc a{
+    color: red;
+}
+
+/* child selector */
+p > a{
+    color: green;
+}
+
+/* sudoselector */
+a:link{
+    color: red;
+    letter-spacing: 5px;
+   
+}
+
+a:hover{
+    color: yellow;
+}
+
+a:active{
+    color: green;
+}
+
+a:visited{
+    color: rgb(0, 0, 0);
+    
+}
+
+/* target */
+:target{ 
+    border: 1px solid red;
+    color: green;
+    
+}
+
+
+/* border */
+.borderone{
+    border: 5px double red;
+}
+
+.bordertwo{
+    border-top: 20px solid yellow;
+    border-bottom: 5px solid rgb(98, 0, 255);
+}
+
+.borderstyle{
+    border: 3px dashed green;
+    /* all four T / R / B / L  */
+}
+
+.borderstylemix{
+    
+    /* border-style: dotted solid; */
+    /* / T&B / L&R  */
+    /* border-style: dotted solid double; */
+    /* T / L&R / B  */
+    border-style: double solid dotted;
+}
+
+.borderwidth{
+    border-width: 15px 10px 5px 15px;
+    border-style: solid;
+    border-color: brown;
+}
+
+/* margin */
+
+.marginone{
+    margin: 50px;
+    border: 1px solid red;
+}
+
+.margintwo{
+    border: 1px solid green;
+    margin: 30px;
+    /* margin: -20px; */
+ 
+}
+
+/* padding */
+
+.paddingone{
+    border: 1px solid red;
+    /* padding: 10px 100px 200px 50px; */
+    padding-left: 50px;
+    padding-bottom: 100px;
+    padding-top: 20px;
+    padding-right: 100px;
+}
+
+/* layout */
+
+.inline{
+    border: 2px solid yellow;
+    text-decoration: none;
+    width: 300px;
+    display: inline-block;
+}
+
+.block{
+    border: 1px solid red;
+    width: 300px;
+    display: inline-block;
+}
+
+.float_left img{
+    /* padding: 10%; */
+     width: 40%;
+     float: left;
+}
+
+.clear{
+    clear: both;
+}
+.float_right img{
+    /* padding: 10%; */
+     width: 40%;
+     float: left;
+}
+   
+/* grid */
+
+.gridone div{
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.gridone{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+/* position */
+
+.relative_parent{
+    border: 1px solid red;
+    width: 1000px;
+    height: 500px;
+}
+
+.relative{
+    border: 1px solid green;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+
+.absoulte_parent{
+    border: 1px solid green;
+    width: 1000px;
+    height: 500px;
+}
+
+.absoulte{
+    border: 1px solid red;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+
+.fixed{
+    position: fixed;
+    top: 100px;
+    left: 100px;
+}
+
+/* font */
+
+.online{
+    font-family: "Courgette",cursive;
+}
+
+/* offline */
+@font-face{
+    src: url(La_Belle_Aurore/LaBelleAurore-Regular.ttf);
+    font-family: one;
+
+}
+
+.offline{
+    font-family: one;
+}
